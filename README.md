@@ -65,7 +65,9 @@ The application is configured to run with HTTPS in development, which is require
 
 1. First run `npm run setup:https` which uses mkcert to create and install local certificates
 2. Local certificates are stored in `~/.vite-ssl/`
-3. The application will automatically use these certificates when starting with `npm run dev:https`
+3. The application will automatically detect and use these certificates when starting with `npm run dev:https`
+
+Note: The HTTPS configuration is handled directly in the vite.config.ts file rather than through command-line flags. The script checks for certificate files and automatically enables HTTPS if they're found.
 
 ## Project Structure
 
