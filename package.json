@@ -1,0 +1,37 @@
+{
+  "name": "react-prototype-gen2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:https": "vite --https",
+    "setup:https": "mkdir -p ~/.vite-ssl && mkcert -install && cd ~/.vite-ssl && mkcert localhost 127.0.0.1 ::1",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@auth0/auth0-react": "2.3.0",
+    "@mantine/core": "7.17.4",
+    "@mantine/dates": "7.17.4",
+    "@mantine/hooks": "7.17.4",
+    "axios": "1.8.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^6.22.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0"
+  }
+}
